@@ -8,7 +8,7 @@ class Pacient {
 
 	/** This method shows the Pacient name and age inside an alert */
 	print() {
-		alert(`${name} tem ${age}`);
+		alert(`${this.name} tem ${this.age}`);
 	}
 
 	/**
@@ -20,11 +20,11 @@ class Pacient {
 	 * @returns a number with the heart beat per minute of the Pacient
 	 */
 	heartBeat(year = 365, hours = 24, minutes = 60, heartBeatPerMinute = 80) {
-		return age * year * hours * minutes * heartBeatPerMinute;
+		return this.age * year * hours * minutes * heartBeatPerMinute;
 	}
 
 	/** This method calculates the IMC of a Pacient */
 	imc() {
-		return weight / (height * height);
+		return this.weight / (this.height * this.height);
 	}
 }
